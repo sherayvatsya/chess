@@ -1,3 +1,4 @@
 # chess
-This is my first project
+This is my first Repository.
+<br>
 Author - Sheray Vatsya
