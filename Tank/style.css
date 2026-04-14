@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background: #bb87eb;
+    background-image: url(https://media.istockphoto.com/id/812425764/photo/marine-military-camp.jpg?s=612x612&w=0&k=20&c=yAdvWPOR_6msVtZhDEzyJ_PIWwuWnNco_0fah-nA5pU=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: rgb(19, 12, 4);
+    background-color: rgb(255, 230, 0);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.scene {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* FLAG */
+.flag {
+    position: absolute;
+    left:  50px;
+    top: 10px;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(orange 33%,
+            white 33%,
+            white 66%,
+            green 66%);
+    border: 2px solid black;
+}
+
+/* TANK */
+.tank {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.body {
+    width: 300px;
+    height: 100px;
+    background: rgb(0, 128, 17);
+    border-radius: 10px;
+}
+
+.turret {
+    width: 150px;
+    height: 50px;
+    background: rgb(47, 107, 87);
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    border-radius: 10px;
+
+    transform-origin: center bottom;
+}
+
+.gun {
+    width: 200px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: -25px;
+    left: 130px;
+}
+
+/* TRACK */
+.track {
+    width: 300px;
+    height: 20px;
+    background: black;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/* BULLET */
+.bullet {
+    width: 15px;
+    height: 8px;
+    background: gray;
+    position: absolute;
+    top: -25px;
+    left: 250px;
+    display: none;
+}
+
+/* EXPLOSION */
+.explosion {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 153, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: -35px;
+    left: 450px;
+    display: none;
+}

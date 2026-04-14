@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #c5d9cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Form Card */
+.contact-form {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.contact-form h1 {
+  font-size: 22px;
+  margin-bottom: 24px;
+  color: #1c2b27;
+}
+
+/* Row (First & Last name) */
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #34423f;
+  font-weight: 500;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccd5d2;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1c7c63;
+  box-shadow: 0 0 0 2px rgba(28, 124, 99, 0.15);
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+/* Fieldset */
+fieldset {
+  border: none;
+  margin-bottom: 18px;
+}
+
+legend {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #34423f;
+}
+
+/* Radio Options */
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: #34423f;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1c7c63;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #166b53;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}

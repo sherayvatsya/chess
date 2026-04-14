@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  category    String
+  mood        String
+  date        String
+  time        String
+  location    String
+  venue       String
+  price       Float
+  image       String
+  attendees   Int      @default(0)
+  totalSpots  Int
+  organizer   String
+  description String
+  createdAt   DateTime @default(now())
+  
+  // Tags represented as JSON or comma-separated string based on what SQLite allows via Prisma
+  tags        String 
+
+  speakers    Speaker[]
+}
+
+model Speaker {
+  id      String @id @default(cuid())
+  name    String
+  role    String
+  image   String
+  
+  eventId String
+  event   Event  @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model DashboardStat {
+  id              String @id @default("1")
+  revenue         Float
+  revenueChange   Float
+  ticketsSold     Int
+  ticketsChange   Float
+  checkIns        Int
+  checkInsChange  Float
+  conversionRate  Float
+  conversionChange Float
+}
